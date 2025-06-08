@@ -866,21 +866,45 @@ body {
       margin: 0 10px;
     }
 
-    @media (max-width: 768px) {
-      .footer-container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    padding: 10px 15px;
+  }
 
-      .newsletter-form {
-        flex-direction: column;
-        width: 100%;
-      }
+  .footer-column {
+    align-items: center;
+    margin-bottom: 5px; /* minimal space between items */
+  }
 
-      .newsletter-form input,
-      .newsletter-form button {
-        width: 100%;
-      }
+  .footer-column:last-child {
+    margin-bottom: 0;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 6px; /* tighter space between input and button */
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+
+
 
 
 @media (max-width: 768px) {
