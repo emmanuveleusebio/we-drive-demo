@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxico - Premium Cab Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="hero-background"></div>
+
+    <!-- Floating Header -->
+    <header class="header-top">
+        <div class="header-top-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                    <span>mail@taxico.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon"><i class="fas fa-phone-alt"></i></span>
+                    <span>(+62) 8896-2220</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon"><i class="fas fa-headset"></i></span>
+                    <span>24/7 Support</span>
+                </div>
+            </div>
+            <div class="service-promise">
+                <i class="fas fa-star"></i> Trusted by 50,000+ customers
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-circle">T</div>
+                <span>Taxico</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li class="dropdown">
+                    <a href="#features">Features <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#booking"><i class="fas fa-calendar-check"></i> Online Booking</a>
+                        <a href="#tracking"><i class="fas fa-map-marker-alt"></i> Live Tracking</a>
+                        <a href="#payment"><i class="fas fa-shield-alt"></i> Secure Payment</a>
+                        <a href="#support"><i class="fas fa-headset"></i> 24/7 Support</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="#ride" class="ride-btn">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-wrapper">
+            <!-- Left Content -->
+            <div class="hero-content">
+                <div class="badge">
+                    <i class="fas fa-taxi"></i> Premium Cab Service
+                </div>
+                <h1 class="main-title">
+                    Ride in <span class="comfortable">Comfort & Style</span>
+                </h1>
+                <p class="description">
+                    Experience premium taxi services with our professional drivers. Safe, reliable, and comfortable rides at competitive prices.
+                </p>
+                <div class="action-buttons">
+                    <a href="#book" class="btn-primary">
+                        <span>Book Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#learn" class="btn-secondary">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Content - Mobile Image -->
+            <div class="phone-container">
+                <img src="https://fse.jegtheme.com/taxico/wp-content/uploads/sites/38/2025/01/taxico-apps-mockup.webp"
+                    alt="Taxico Mobile App" class="mobile-mockup">
+            </div>
+        </div>
+    </main>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <div class="booking-form">
+                <h2 class="section-title">Book Your Ride</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pickup">Pickup Location</label>
+                            <input type="text" id="pickup" placeholder="Enter pickup address">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" id="destination" placeholder="Enter destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Pickup Date</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Pickup Time</label>
+                            <input type="time" id="time">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vehicle">Vehicle Type</label>
+                            <select id="vehicle">
+                                <option value="">Select vehicle</option>
+                                <option value="standard">Standard Taxi</option>
+                                <option value="premium">Premium Sedan</option>
+                                <option value="suv">SUV</option>
+                                <option value="van">Van</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="passengers">Passengers</label>
+                            <select id="passengers">
+                                <option value="1">1 Passenger</option>
+                                <option value="2">2 Passengers</option>
+                                <option value="3">3 Passengers</option>
+                                <option value="4">4 Passengers</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="payment">Payment Method</label>
+                            <select id="payment">
+                                <option value="cash">Cash</option>
+                                <option value="card">Credit Card</option>
+                                <option value="mobile">Mobile Payment</option>
+                            </select>
+                        </div>
+                        <div class="form-group book-btn-group">
+                            <button type="submit" class="book-taxi-btn">
+                                Book Taxi Now
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download Section -->
+    <section class="app-download-section">
+        <div class="app-download-container">
+            <div class="app-download-content">
+                <div class="app-content">
+                    <div class="app-section-badge">
+                        <i class="fas fa-mobile-alt"></i> Download Our App
+                    </div>
+                    <h2 class="app-download-title">
+                        Get the Taxico <span class="gadget-text">Mobile App</span>
+                    </h2>
+                    <p class="app-download-description">
+                        Book rides, track your driver, and pay seamlessly with our easy-to-use mobile application. Available for both iOS and Android devices.
+                    </p>
+                    <div class="app-store-buttons">
+                        <a href="#" class="app-store-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+                        </a>
+                        <a href="#" class="google-play-btn">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                        </a>
+                    </div>
+                </div>
+                <div class="app-phones-container">
+                    <img src="https://fse.jegtheme.com/taxico/wp-content/uploads/sites/38/2025/01/taxico-apps-mockup.webp" alt="Phone 1" class="phone-mockup phone-1">
+                    <img src="https://fse.jegtheme.com/taxico/wp-content/uploads/sites/38/2025/01/taxico-apps-mockup.webp" alt="Phone 2" class="phone-mockup phone-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Address</h3>
+        <p>Jl. Merdeka Raya No.73B, Kuta,<br />Kabupaten Badung, Bali</p>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p>mail@company.com<br />(+62) 8896-2220</p>
+      </div>
+      <div class="footer-column">
+        <h3>Work</h3>
+        <p>Mon – Sat : 08:00 – 18:00<br />Sun : 09:00 – 18:00</p>
+      </div>
+      <div class="footer-column">
+        <h3>Newsletter</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Email Address" />
+          <button type="submit">📧</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Taxico WordPress Theme powered by <a href="#" style="color: white;">Gutenverse</a>
+      <span>|</span>
+      <a href="#" style="color: white;">Privacy Policy</a>
+      <span>|</span>
+      <a href="#" style="color: white;">Terms Condition</a>
+    </div>
+  </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
